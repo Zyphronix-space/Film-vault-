@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmVault - Your Ultimate Streaming Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo-icon.png" alt="" class="logo-icon">
+                <span class="logo-text">FilmVault</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#series">TV Series</a></li>
+                <li><a href="genre.html">Genres</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Search movies, series...">
+                <button class="btn btn-primary">Sign In</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content glass">
+            <h1>Your Ultimate Streaming Experience</h1>
+            <p>Discover thousands of movies and TV series. Stream unlimited entertainment anytime, anywhere.</p>
+            <div class="cta-buttons">
+                <a href="#movies" class="btn btn-primary">Start Watching</a>
+                <a href="#browse" class="btn btn-secondary">Browse Catalog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Movies -->
+    <section id="movies" class="section">
+        <h2>Featured Movies</h2>
+        <div class="categories">
+            <button class="category-btn active">All</button>
+            <button class="category-btn">Action</button>
+            <button class="category-btn">Drama</button>
+            <button class="category-btn">Comedy</button>
+            <button class="category-btn">Thriller</button>
+            <button class="category-btn">Sci-Fi</button>
+        </div>
+        <div class="content-grid" id="movies-grid">
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/thunderbolts.jpg" alt="Thunderbolts Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Thunderbolts</h3>
+                    <div class="card-meta">
+                        <span>2025 • Action/Superhero</span>
+                        <span class="rating">8.4</span>
+                    </div>
+                    <p class="card-description">A team of reformed villains must work together to face a threat that could destroy everything they've fought to protect.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/m3gan-2.jpg" alt="Megan 2.0 Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Megan 2.0</h3>
+                    <div class="card-meta">
+                        <span>2025 • Horror/Sci-Fi</span>
+                        <span class="rating">8.1</span>
+                    </div>
+                    <p class="card-description">The next generation of AI companion technology brings new terrors as artificial intelligence evolves beyond human control.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/bloodlines.jpg" alt="Bloodline Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Final Destination: Bloodline</h3>
+                    <div class="card-meta">
+                        <span>2025 • Horror/Thriller</span>
+                        <span class="rating">7.8</span>
+                    </div>
+                    <p class="card-description">Death returns with elaborate schemes as a new group discovers they cannot escape their predetermined fate.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/karate-kid-legends.jpg" alt="Karate Kid Legends Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Karate Kid: Legends</h3>
+                    <div class="card-meta">
+                        <span>2025 • Action/Drama</span>
+                        <span class="rating">8.6</span>
+                    </div>
+                    <p class="card-description">A new generation of martial artists must honor ancient traditions while facing modern challenges in this legacy continuation.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/ballerina.jpg" alt="Ballerina Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Ballerina</h3>
+                    <div class="card-meta">
+                        <span>2025 • Action/Thriller</span>
+                        <span class="rating">8.2</span>
+                    </div>
+                    <p class="card-description">A skilled assassin seeks vengeance in this high-octane thriller that combines elegant choreography with intense action sequences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TV Series -->
+    <section id="series" class="section">
+        <h2>Popular TV Series</h2>
+        <div class="content-grid" id="series-grid">
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/dexter.jpg" alt="Dexter Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Dexter</h3>
+                    <div class="card-meta">
+                        <span>Crime/Drama • 8 Seasons</span>
+                        <span class="rating">9.0</span>
+                    </div>
+                    <p class="card-description">A forensic blood spatter analyst leads a double life as a vigilante serial killer targeting criminals who escaped justice.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/invincible.jpg" alt="Invincible Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Invincible</h3>
+                    <div class="card-meta">
+                        <span>Animation/Superhero • 2 Seasons</span>
+                        <span class="rating">8.7</span>
+                    </div>
+                    <p class="card-description">A teenage superhero discovers that having the world's most powerful father comes with dangerous complications and dark secrets.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/the-boys.jpg" alt="The Boys Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">The Boys</h3>
+                    <div class="card-meta">
+                        <span>Action/Dark Comedy • 4 Seasons</span>
+                        <span class="rating">8.8</span>
+                    </div>
+                    <p class="card-description">A group of vigilantes fight against corrupt superheroes who abuse their powers and manipulate the public for personal gain.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/breaking-bad.jpg" alt="Breaking Bad Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Breaking Bad</h3>
+                    <div class="card-meta">
+                        <span>Crime/Drama • 5 Seasons</span>
+                        <span class="rating">9.5</span>
+                    </div>
+                    <p class="card-description">A high school chemistry teacher turns to manufacturing drugs after a cancer diagnosis threatens his family's financial security.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/peaky-blinders.jpg" alt="Peaky Blinders Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Peaky Blinders</h3>
+                    <div class="card-meta">
+                        <span>Crime/Period Drama • 6 Seasons</span>
+                        <span class="rating">8.8</span>
+                    </div>
+                    <p class="card-description">A notorious gang family rises to power in post-World War I Birmingham, England, mixing crime, politics, and family loyalty.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card-image">
+                    <img src="assets/images/posters/the-penguin.jpg" alt="The Penguin Poster">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">The Penguin</h3>
+                    <div class="card-meta">
+                        <span>Crime/Drama • 1 Season</span>
+                        <span class="rating">8.5</span>
+                    </div>
+                    <p class="card-description">Following the events of The Batman, Oswald Cobblepot makes his play for control of Gotham's criminal underworld.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FilmVault</h3>
+                <p>Your ultimate destination for premium streaming entertainment. Discover, watch, and enjoy unlimited movies and TV series.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#movies">Movies</a></p>
+                <p><a href="#series">TV Series</a></p>
+                <p><a href="genre.html">Genres</a></p>
+                <p><a href="watchlist.html">My Watchlist</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p><a href="#">Help Center</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Terms of Service</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p><a href="#">Newsletter</a></p>
+                <p><a href="#">Social Media</a></p>
+                <p><a href="#">Mobile Apps</a></p>
+                <p><a href="#">Gift Cards</a></p>
+            </div>
+        </div>
+        <p>© 2024 FilmVault. All rights reserved. Stream responsibly.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

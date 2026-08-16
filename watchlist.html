@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmVault - My Watchlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo-icon.png" alt="" class="logo-icon">
+                <span class="logo-text">FilmVault</span>
+            </div>
+           <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#movies">Movies</a></li>
+                <li><a href="index.html#series">TV Series</a></li>
+                <li><a href="genre.html">Genres</a></li>
+                <li><a href="watchlist.html" class="active">Watchlist</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Search watchlist...">
+                <button class="btn btn-primary">Sign In</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">My Watchlist</h1>
+            <p class="page-subtitle">Keep track of movies and series you want to watch</p>
+            
+            <div class="watchlist-stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="statTotalItems">12</div>
+                    <div class="stat-label">Total Items</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="statMovies">8</div>
+                    <div class="stat-label">Movies</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="statSeries">4</div>
+                    <div class="stat-label">TV Series</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">Total Runtime</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="movie">Movies</button>
+                <button class="filter-btn" data-filter="series">TV Series</button>
+                <button class="filter-btn" data-filter="recent">Recently Added</button>
+            </div>
+            <select class="sort-dropdown" id="sortDropdown">
+                <option value="date-added">Sort by Date Added</option>
+                <option value="title">Sort by Title</option>
+                <option value="rating">Sort by Rating</option>
+                <option value="year">Sort by Release Year</option>
+            </select>
+        </div>
+
+        <!-- Watchlist Grid -->
+        <div class="watchlist-grid" id="watchlistGrid">
+            <div class="watchlist-card" data-id="thunderbolts" data-type="movie" data-year="2025" data-added-days="2">
+                <div class="card-image">
+                    <img src="assets/images/posters/thunderbolts.jpg" alt="Thunderbolts">
+                    <div class="card-overlay">
+                        <button class="play-button">▶</button>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-remove">Remove</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Thunderbolts</h3>
+                    <div class="card-meta">
+                        <span>2025 • Action/Superhero</span>
+                        <span class="rating">8.4</span>
+                    </div>
+                    <p class="card-description">A team of reformed villains must work together to face a threat that could destroy everything.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Watch Now</button>
+                        <span class="date-added">Added 2 days ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watchlist-card" data-id="dexter" data-type="series" data-year="2006" data-added-days="7">
+                <div class="card-image">
+                    <img src="assets/images/posters/dexter.jpg" alt="Dexter">
+                    <div class="card-overlay">
+                        <button class="play-button">▶</button>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-remove">Remove</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Dexter</h3>
+                    <div class="card-meta">
+                        <span>Crime/Drama • 8 Seasons</span>
+                        <span class="rating">9.0</span>
+                    </div>
+                    <p class="card-description">A forensic blood spatter analyst leads a double life as a vigilante serial killer.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Continue S1E5</button>
+                        <span class="date-added">Added 1 week ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watchlist-card" data-id="ballerina" data-type="movie" data-year="2025" data-added-days="3">
+                <div class="card-image">
+                    <img src="assets/images/posters/ballerina.jpg" alt="Ballerina">
+                    <div class="card-overlay">
+                        <button class="play-button">▶</button>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-remove">Remove</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Ballerina</h3>
+                    <div class="card-meta">
+                        <span>2025 • Action/Thriller</span>
+                        <span class="rating">8.2</span>
+                    </div>
+                    <p class="card-description">A skilled assassin seeks vengeance in this high-octane thriller.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Watch Now</button>
+                        <span class="date-added">Added 3 days ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watchlist-card" data-id="invincible" data-type="series" data-year="2021" data-added-days="5">
+                <div class="card-image">
+                    <img src="assets/images/posters/invincible.jpg" alt="Invincible">
+                    <div class="card-overlay">
+                        <button class="play-button">▶</button>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-remove">Remove</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Invincible</h3>
+                    <div class="card-meta">
+                        <span>Animation/Superhero • 2 Seasons</span>
+                        <span class="rating">8.7</span>
+                    </div>
+                    <p class="card-description">A teenage superhero discovers dangerous complications with having the world's most powerful father.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Continue S2E3</button>
+                        <span class="date-added">Added 5 days ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watchlist-card" data-id="karate-kid-legends" data-type="movie" data-year="2025" data-added-days="1">
+                <div class="card-image">
+                    <img src="assets/images/posters/karate-kid-legends.jpg" alt="Karate Kid: Legends">
+                    <div class="card-overlay">
+                        <button class="play-button">▶</button>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-remove">Remove</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Karate Kid: Legends</h3>
+                    <div class="card-meta">
+                        <span>2025 • Action/Drama</span>
+                        <span class="rating">8.6</span>
+                    </div>
+                    <p class="card-description">A new generation of martial artists must honor ancient traditions while facing modern challenges.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Watch Now</button>
+                        <span class="date-added">Added 1 day ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watchlist-card" data-id="breaking-bad" data-type="series" data-year="2008" data-added-days="14">
+                <div class="card-image">
+                    <img src="assets/images/posters/breaking-bad.jpg" alt="Breaking Bad">
+                    <div class="card-overlay">
+                        <button class="play-button">▶</button>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-remove">Remove</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Breaking Bad</h3>
+                    <div class="card-meta">
+                        <span>Crime/Drama • 5 Seasons</span>
+                        <span class="rating">9.5</span>
+                    </div>
+                    <p class="card-description">A chemistry teacher turns to manufacturing drugs after a cancer diagnosis.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary">Completed</button>
+                        <span class="date-added">Added 2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty State (hidden when items exist) -->
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <div class="empty-icon">📺</div>
+            <h3 class="empty-title">Your watchlist is empty</h3>
+            <p class="empty-description">Start adding movies and TV series you want to watch later</p>
+            <a href="index.html" class="btn btn-primary">Browse Content</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FilmVault</h3>
+                <p>Your ultimate destination for premium streaming entertainment. Discover, watch, and enjoy unlimited movies and TV series.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html#movies">Movies</a></p>
+                <p><a href="index.html#series">TV Series</a></p>
+                <p><a href="genre.html">Genres</a></p>
+                <p><a href="watchlist.html">My Watchlist</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p><a href="#">Help Center</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Terms of Service</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p><a href="#">Newsletter</a></p>
+                <p><a href="#">Social Media</a></p>
+                <p><a href="#">Mobile Apps</a></p>
+                <p><a href="#">Gift Cards</a></p>
+            </div>
+        </div>
+        <p>© 2024 FilmVault. All rights reserved. Stream responsibly.</p>
+    </footer>
+
+    <script src="assets/js/watchlist.js"></script>
+</body>
+</html>

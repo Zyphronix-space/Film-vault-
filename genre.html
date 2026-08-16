@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmVault - Browse by Genre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo-icon.png" alt="" class="logo-icon">
+                <span class="logo-text">FilmVault</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#movies">Movies</a></li>
+                <li><a href="index.html#series">TV Series</a></li>
+                <li><a href="genre.html" class="active">Genres</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Search movies, series...">
+                <button class="btn btn-primary">Sign In</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 class="page-title">Browse by Genre</h1>
+        <p class="page-subtitle">Discover your favorite movies and TV series by genre</p>
+
+        <div class="genre-grid">
+            <div class="genre-card action" onclick="location.href='index.html?genre=Action#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">⚡</div>
+                    <h3 class="genre-title">Action</h3>
+                    <p class="genre-count">1,247 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card comedy" onclick="location.href='index.html?genre=Comedy#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">😄</div>
+                    <h3 class="genre-title">Comedy</h3>
+                    <p class="genre-count">892 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card drama" onclick="location.href='index.html?genre=Drama#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">🎭</div>
+                    <h3 class="genre-title">Drama</h3>
+                    <p class="genre-count">1,156 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card horror" onclick="location.href='index.html?genre=Horror#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">👻</div>
+                    <h3 class="genre-title">Horror</h3>
+                    <p class="genre-count">634 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card sci-fi" onclick="location.href='index.html?genre=Sci-Fi#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">🚀</div>
+                    <h3 class="genre-title">Sci-Fi</h3>
+                    <p class="genre-count">743 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card thriller" onclick="location.href='index.html?genre=Thriller#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">🔥</div>
+                    <h3 class="genre-title">Thriller</h3>
+                    <p class="genre-count">956 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card" onclick="location.href='index.html?genre=Romance#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">💕</div>
+                    <h3 class="genre-title">Romance</h3>
+                    <p class="genre-count">567 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card" onclick="location.href='index.html?genre=Animation#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">🎨</div>
+                    <h3 class="genre-title">Animation</h3>
+                    <p class="genre-count">423 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card" onclick="location.href='index.html?genre=Documentary#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">📹</div>
+                    <h3 class="genre-title">Documentary</h3>
+                    <p class="genre-count">289 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card" onclick="location.href='index.html?genre=Fantasy#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">🧙</div>
+                    <h3 class="genre-title">Fantasy</h3>
+                    <p class="genre-count">512 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card" onclick="location.href='index.html?genre=Crime#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">🕵️</div>
+                    <h3 class="genre-title">Crime</h3>
+                    <p class="genre-count">678 titles</p>
+                </div>
+            </div>
+
+            <div class="genre-card" onclick="location.href='index.html?genre=Family#movies'">
+                <div class="genre-content">
+                    <div class="genre-icon">👨‍👩‍👧‍👦</div>
+                    <h3 class="genre-title">Family</h3>
+                    <p class="genre-count">345 titles</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FilmVault</h3>
+                <p>Your ultimate destination for premium streaming entertainment. Discover, watch, and enjoy unlimited movies and TV series.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html#movies">Movies</a></p>
+                <p><a href="index.html#series">TV Series</a></p>
+                <p><a href="genre.html">Genres</a></p>
+                <p><a href="watchlist.html">My Watchlist</a></p>
+
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p><a href="#">Help Center</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Terms of Service</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p><a href="#">Newsletter</a></p>
+                <p><a href="#">Social Media</a></p>
+                <p><a href="#">Mobile Apps</a></p>
+                <p><a href="#">Gift Cards</a></p>
+            </div>
+        </div>
+        <p>© 2024 FilmVault. All rights reserved. Stream responsibly.</p>
+    </footer>
+</body>
+</html>
